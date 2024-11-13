@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dit is een vet coole test</h1>
+    <p>Love variable fonts!</p>
+</body>
+</html>
+
+<style>
+    @font-face {
+        font-family: 'Decovar';
+        src: url(DecovarAlpha-VF.ttf);
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    h1 {
+        font-family: 'Decovar';
+        font-size: 6em;
+        text-align: center;
+        margin: 0;
+        transition: font-variation-settings 0.3s;
+        font-variation-settings: "BLDA" 1000, "TRMD" 0, "TRMC" 0, "SKLD" 0, "TRML" 0, "SKLA" 0, "TRMF" 0, "TRMK" 0, "BLDB" 400, "WMX2" 0, "TRMB" 0, "TRMA" 500, "SKLB" 0, "TRMG" 0, "TRME" 0;
+    }
+
+    p {
+        font-family: 'Decovar';
+        font-size: 2em;
+        text-align: center;
+        margin: 0;
+        font-variation-settings: "BLDA" 0, "TRMD" 0, "TRMC" 0, "SKLD" 0, "TRML" 0, "SKLA" 0, "TRMF" 500, "TRMK" 0, "BLDB" 0, "WMX2" 0, "TRMB" 0, "TRMA" 0, "SKLB" 0, "TRMG" 0, "TRME" 0;
+    }
+
+    h1:hover {
+        font-variation-settings: "BLDA" 0, "TRMD" 0, "TRMC" 800, "SKLD" 500, "TRML" 0, "SKLA" 0, "TRMF" 0, "TRMK" 0, "BLDB" 400, "WMX2" 0, "TRMB" 0, "TRMA" 500, "SKLB" 0, "TRMG" 0, "TRME" 0;
+    }
+</style>
